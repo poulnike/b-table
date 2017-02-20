@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="FooTable/compiled/footable.bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/plugins/rangeSlider/ion.rangeSlider.css" rel="stylesheet">
+    <link href="../../css/plugins/rangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+    <link href="../../css/plugins/switchery/switchery.min.css" rel="stylesheet">
+    <link href="../../css/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="rb-net__filter col-md-12">
+            <div class="rb-net__filter-section pull-right">
+                <div class="rb-net__filter-section-label"></div>
+                <div class="btn-group" role="group">
+                    <a class="btn btn-default" href="#" data-toggle="modal" data-target="#rb-modal__rb-net_table-settings">
+                        <i class="fa fa-sliders"></i> </a>
+                    <div class="rb-modal modal inmodal" id="rb-modal__rb-net_table-settings" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content animated bounceInDown">
+                                <div class="rb-modal__header modal-header">
+                                    <button class="close" type="button" data-dismiss="modal">
+                                        <span aria-hidden="true">×</span><span class="sr-only">Закрыть</span>
+                                    </button>
+                                    <h4 class="modal-title rb-modal__title">Настройка таблицы</h4>
+                                </div>
+                                <div class="rb-modal__body modal-body">
+                                    <div class="rb-net__table-settings"> </div>
+                                </div>
+                                <div class="rb-modal__footer modal-footer">
+                                    <a class="btn btn-white pull-right" type="button" data-dismiss="modal">Закрыть</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rb-net__filter-section rb-net__filter-section_skill">
+                <div class="rb-net__filter-section-label">Квалификация</div>
+                <div class="btn-group" role="group">
+                    <select class="selectpicker" multiple data-selected-text-format="count &gt; 8"
+                            data-actions-box="true">
+                        <option title="0">0</option>
+                        <option title="1" selected>1</option>
+                        <option title="2">2</option>
+                        <option title="3">3</option>
+                        <option title="4">4</option>
+                        <option title="5">5</option>
+                        <option title="6">6</option>
+                        <option title="7">7</option>
+                        <option title="8">8</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <table class="footable3 table rb-table__footable" data-page-size="20" data-sorting="true" data-paging="true">
+            <thead>
+            <tr></tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/f5d25fbc5e.js"></script>
+<script src="../../js/plugins/rangeSlider/ion.rangeSlider.min.js"></script>
+<script src="FooTable/compiled/footable.js"></script>
+<script src="../../js/plugins/bootstrap-select/bootstrap-select.js"></script>
+<script src="../../js/plugins/bootstrap-select/i18n/defaults-ru_RU.min.js"></script>
+<script src="../../js/plugins/switchery/switchery.min.js"></script>
+<script src="app/app.js"></script>
+
+</html>
